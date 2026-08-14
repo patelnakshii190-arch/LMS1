@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LMS Auth</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="auth-card">
+      <h1 id="form-title">Register</h1>
+      <p class="auth-subtitle">Create a secure account and access your learning dashboard.</p>
+      <div class="toggle-buttons">
+        <button id="show-register" class="active">Register</button>
+        <button id="show-login">Login</button>
+      </div>
+      <form id="auth-form">
+        <div class="form-group" id="name-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Full name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="name@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Password" required />
+        </div>
+        <div class="form-group" id="role-group">
+          <label for="role">Role</label>
+          <select id="role">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="admin">Admin</option>
+          </select>
+        </div>
+        <button type="submit" id="submit-button">Register</button>
+      </form>
+      <button id="go-dashboard-btn" class="submit-button hidden">Go to Dashboard</button>
+      <p class="info" id="message"></p>
+      <footer class="auth-footer">Secure access for students, teachers, and administrators.</footer>
+    </div>
+    <div class="card hidden" id="dashboard-card">
+      <div class="dashboard-page">
+        <aside class="dashboard-sidebar">
+          <div class="dashboard-brand">
+            <h1>LMS Portal</h1>
+            <p class="dashboard-brand-subtitle">Your learning command center</p>
+          </div>
+          <div id="dashboard-actions" class="dashboard-actions"></div>
+          <button id="logout-button" class="logout-button dashboard-logout">Logout</button>
+        </aside>
+        <main class="dashboard-main">
+          <div id="dashboard-content"></div>
+          <div id="dashboard-section" class="dashboard-section"></div>
+        </main>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

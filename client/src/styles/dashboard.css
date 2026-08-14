@@ -1,0 +1,623 @@
+/* =========================================
+   ANALYTICS SECTION
+========================================= */
+
+.analytics-section {
+  margin-top: 40px;
+  padding: 35px;
+  background: #ffffff;
+  border: 1px solid #cceeee;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0, 80, 90, 0.06);
+}
+
+
+/* HEADER */
+
+.analytics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.analytics-header h1 {
+  margin: 0;
+  font-size: 34px;
+  letter-spacing: 1px;
+  color: #075b63;
+}
+
+.analytics-header p {
+  margin-top: 10px;
+  color: #527277;
+  font-size: 16px;
+}
+
+
+/* REFRESH BUTTON */
+
+.refresh-btn {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #d8f5f2;
+  color: #075b63;
+  font-weight: 600;
+}
+
+.refresh-btn:hover {
+  background: #c4eeeb;
+}
+
+
+/* LOADING */
+
+.analytics-loading {
+  padding: 50px;
+  text-align: center;
+  font-size: 18px;
+  color: #527277;
+}
+
+
+/* SUMMARY CARDS */
+
+.analytics-cards {
+  display: grid;
+  grid-template-columns:
+    repeat(5, 1fr);
+
+  gap: 18px;
+
+  margin-bottom: 30px;
+}
+
+.analytics-card {
+  padding: 25px;
+  border-radius: 18px;
+
+  background: #f1fbfa;
+
+  border: 1px solid #c7ece9;
+
+  text-align: center;
+}
+
+.analytics-card span {
+  font-size: 28px;
+}
+
+.analytics-card h2 {
+  margin: 12px 0 5px;
+
+  font-size: 30px;
+
+  color: #075b63;
+}
+
+.analytics-card p {
+  margin: 0;
+
+  color: #607b80;
+}
+
+
+/* GRID */
+
+.analytics-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 25px;
+
+  margin-bottom: 25px;
+}
+
+
+/* BOX */
+
+.analytics-box {
+  padding: 28px;
+
+  margin-bottom: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #d0eeee;
+
+  border-radius: 20px;
+}
+
+.analytics-box h2 {
+  margin-top: 0;
+
+  color: #075b63;
+
+  font-size: 23px;
+}
+
+.analytics-subtitle {
+  color: #70878b;
+
+  margin-bottom: 25px;
+}
+
+
+/* COURSE STAT */
+
+.course-stat {
+  margin-bottom: 25px;
+}
+
+.course-stat-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-bottom: 8px;
+
+  color: #275c62;
+}
+
+
+/* PROGRESS */
+
+.progress-bar {
+  height: 12px;
+
+  width: 100%;
+
+  background: #e8f3f2;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+
+  background: #5bbfc0;
+
+  border-radius: 20px;
+
+  transition: width 0.5s ease;
+}
+
+.course-stat small {
+  display: block;
+
+  margin-top: 7px;
+
+  color: #71898d;
+}
+
+
+/* =========================================
+   BAR CHART
+========================================= */
+
+.bar-chart {
+  height: 260px;
+
+  display: flex;
+
+  justify-content: space-around;
+
+  align-items: flex-end;
+
+  padding-top: 20px;
+}
+
+.bar-item {
+  height: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-end;
+
+  align-items: center;
+
+  min-width: 60px;
+}
+
+.bar-value {
+  margin-bottom: 7px;
+
+  font-weight: bold;
+
+  color: #075b63;
+}
+
+.bar-wrapper {
+  height: 180px;
+
+  width: 45px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  background: #edf8f7;
+
+  border-radius: 10px 10px 0 0;
+}
+
+.bar {
+  width: 100%;
+
+  background: #5bbfc0;
+
+  border-radius: 10px 10px 0 0;
+
+  transition: height 0.5s ease;
+}
+
+.bar-item small {
+  margin-top: 10px;
+
+  color: #647b80;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.student-table {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+.student-row {
+  display: grid;
+
+  grid-template-columns:
+    1.5fr
+    1.5fr
+    1fr
+    1fr;
+
+  gap: 15px;
+
+  padding: 16px;
+
+  border-bottom: 1px solid #e5eeee;
+
+  align-items: center;
+}
+
+.student-heading {
+  background: #eef9f8;
+
+  border-radius: 10px;
+
+  font-weight: bold;
+
+  color: #075b63;
+}
+
+.student-row:hover {
+  background: #fafdfd;
+}
+
+
+/* SCORE */
+
+.score-good {
+  font-weight: bold;
+
+  color: #258b73;
+}
+
+.score-low {
+  font-weight: bold;
+
+  color: #d05c5c;
+}
+
+
+/* IMPROVEMENT */
+
+.improvement-box {
+  border-left: 5px solid #e6b96c;
+}
+
+
+/* NO DATA */
+
+.no-data {
+  padding: 35px;
+
+  text-align: center;
+
+  color: #6f8589;
+
+  background: #f7fbfb;
+
+  border-radius: 15px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .analytics-cards {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .analytics-cards {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .analytics-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+}
+
+@media (max-width: 550px) {
+
+  .analytics-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .analytics-section {
+    padding: 20px;
+  }
+
+  .student-row {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+}
+/* ========================================
+   ANALYTICS
+======================================== */
+
+.analytics-panel {
+  background: #ffffff;
+  border: 1px solid #d8eeee;
+  border-radius: 22px;
+  padding: 25px;
+  margin-top: 24px;
+}
+
+.analytics-panel h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+
+.analytics-course {
+  margin-bottom: 22px;
+}
+
+.analytics-course-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.analytics-bar {
+  width: 100%;
+  height: 10px;
+  background: #e7eeee;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.analytics-bar-fill {
+  height: 100%;
+  background: #62b7b0;
+  border-radius: 20px;
+}
+
+.analytics-course small {
+  display: block;
+  margin-top: 7px;
+  opacity: 0.7;
+}
+
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+
+.analytics-student {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 0;
+
+  border-bottom: 1px solid #e8eeee;
+}
+
+.analytics-student:last-child {
+  border-bottom: none;
+}
+
+.analytics-student small {
+  display: block;
+  margin-top: 4px;
+  opacity: 0.65;
+}
+
+
+.analytics-distribution {
+  display: grid;
+  grid-template-columns: 90px 1fr 40px;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.analytics-distribution-track {
+  height: 12px;
+  background: #e8eeee;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.analytics-distribution-track div {
+  height: 100%;
+  background: #62b7b0;
+  border-radius: 20px;
+}
+
+
+@media (max-width: 800px) {
+
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+/* ======================================================
+   ANALYTICS PROFESSIONAL CHART
+====================================================== */
+
+.analytics-highlight-card {
+  margin: 25px 0;
+  padding: 25px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #dff7f3, #eefaf8);
+  border: 1px solid #b9e5df;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.analytics-label {
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  opacity: 0.65;
+}
+
+.analytics-highlight-card h1 {
+  margin: 8px 0 0;
+  font-size: 42px;
+}
+
+.analytics-highlight-card p {
+  margin: 5px 0 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+.analytics-chart-card {
+  margin: 25px 0;
+  padding: 30px;
+  background: white;
+  border-radius: 22px;
+  border: 1px solid #d5eeee;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+}
+
+.analytics-chart-header h2 {
+  margin-bottom: 5px;
+}
+
+.analytics-chart-header p {
+  margin-top: 0;
+  opacity: 0.65;
+}
+
+
+.analytics-chart {
+  margin-top: 30px;
+}
+
+
+.analytics-chart-row {
+  display: grid;
+  grid-template-columns: 220px 1fr 70px;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+
+.analytics-student-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.analytics-student-name strong {
+  min-width: 75px;
+}
+
+
+.analytics-student-name small {
+  opacity: 0.6;
+}
+
+
+.analytics-rank {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e7f4f3;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+.analytics-bar-container {
+  height: 18px;
+  background: #edf3f3;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+
+.analytics-score-bar {
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    #55b7c8,
+    #2d8fa3
+  );
+  transition: width 0.8s ease;
+}
+
+
+.analytics-score-value {
+  font-weight: 700;
+  text-align: right;
+}
